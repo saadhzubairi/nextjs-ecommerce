@@ -91,3 +91,6 @@ const NavItem = ({ category, handleOpen, isAnyOpen, isOpen }: NavItemProps) => {
     )
 }
 export default NavItem
+
+
+

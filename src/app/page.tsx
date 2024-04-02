@@ -37,7 +37,7 @@ export default function Home() {
       <MaxWidthWrapper >
         <div className="py-20 mx-auto text-center flex flex-col items-center max-w-3xl">
           <h1 className="text-4xl font-bold text-gray-900 sm:text-6xl">
-            Your Marketplace for high quality <span className="text-blue-600  tracking-tight">digital assets</span>.
+            Your Marketplace for high quality <span className="text-primary  tracking-tight">digital assets</span>.
           </h1>
           <p className="mt-6 text-lg max-w-prose text-muted-foreground">Welcome to LadyBug. Every asset on our platform is verfied by our team to ensure the highest standard!</p>
 
@@ -65,7 +65,7 @@ export default function Home() {
               key={perk.name}
               className='text-center md:flex md:items-start md:text-left lg:block lg:text-center'>
               <div className='md:flex-shrink-0 flex justify-center'>
-                <div className='h-16 w-16 flex items-center justify-center rounded-full bg-blue-100 text-blue-900'>
+                <div className='h-16 w-16 flex items-center justify-center rounded-full bg-primary-foreground text-primary'>
                   {<perk.Icon className='w-1/3 h-1/3' />}
                 </div>
               </div>
