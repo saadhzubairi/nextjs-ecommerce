@@ -18,7 +18,7 @@ import Image from 'next/image'
 
 const Cart = () => {
 
-    const itemCount = 0;
+    const itemCount = 1;
     const bill = 35.69;
 
     return (
@@ -26,9 +26,9 @@ const Cart = () => {
             <SheetTrigger className='group -m-2 flex items-center p-2'>
                 <ShoppingCart
                     aria-hidden='true'
-                    className='h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500'
+                    className='h-6 w-6 flex-shrink-0 text-muted-foreground group-hover:text-foreground'
                 />
-                <span className='ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800'>
+                <span className='ml-2 text-sm font-medium text-muted-foreground group-hover:text-foreground'>
                     {itemCount}
                 </span>
             </SheetTrigger>
@@ -71,7 +71,7 @@ const Cart = () => {
 
                                     <SheetFooter>
                                         <SheetTrigger asChild>
-                                            <Link href={"/cart"} className={cn(buttonVariants(), "w-full")}>
+                                            <Link href={"/cart"} className={cn(buttonVariants({ variant: 'default' }), "w-full")}>
                                                 Continue to Checkout
                                             </Link>
                                         </SheetTrigger>

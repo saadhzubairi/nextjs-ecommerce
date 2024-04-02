@@ -13,10 +13,10 @@ const Navbar = () => {
     const user = null
 
     return (
-        <div className='bg-white sticky z-50 top-0 inset-x-0 h-16'>
-            <header className='relative bg-white'>
+        <div className='bg-background sticky z-50 top-0 inset-x-0 h-16'>
+            <header className='relative bg-muted/10 backdrop-blur-md'>
                 <MaxWidthWrapper>
-                    <div className='border-b border-gray-200'>
+                    <div className='border-b border-border'>
                         <div className='flex h-16 items-center'>
                             <div className='ml-4 flex lg:ml-0'>
                                 <Link href='/'>
@@ -41,7 +41,7 @@ const Navbar = () => {
 
                                     {user ? null : (
                                         <span
-                                            className='h-6 w-px bg-gray-200'
+                                            className='h-6 w-px bg-muted-foreground'
                                             aria-hidden='true'
                                         />
                                     )}
@@ -63,7 +63,7 @@ const Navbar = () => {
 
                                     {user ? (
                                         <span
-                                            className='h-6 w-px bg-gray-200'
+                                            className='h-6 w-px bg-muted-foreground'
                                             aria-hidden='true'
                                         />
                                     ) : null}
@@ -71,7 +71,7 @@ const Navbar = () => {
                                     {user ? null : (
                                         <div className='flex lg:ml-6'>
                                             <span
-                                                className='h-6 w-px bg-gray-200'
+                                                className='h-6 w-px bg-muted-foreground'
                                                 aria-hidden='true'
                                             />
                                         </div>
