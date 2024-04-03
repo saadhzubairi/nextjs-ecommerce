@@ -6,6 +6,8 @@ import NavItems from '../NavItems'
 import { buttonVariants } from './button'
 import Cart from '../Cart'
 
+
+
 const Navbar = () => {
 
     /* mocking user */
@@ -13,7 +15,7 @@ const Navbar = () => {
     const user = null
 
     return (
-        <div className='bg-background sticky z-50 top-0 inset-x-0 h-16'>
+        <div className='bg-background/50 sticky z-50 top-0 inset-x-0 h-16'>
             <header className='relative bg-muted/10 backdrop-blur-md'>
                 <MaxWidthWrapper>
                     <div className='border-b border-border'>

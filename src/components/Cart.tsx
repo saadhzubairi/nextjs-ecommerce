@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import { buttonVariants } from './ui/button'
 import { cn, formatPrice } from '@/lib/utils'
