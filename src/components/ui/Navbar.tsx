@@ -5,7 +5,7 @@ import { Icons } from './Icons'
 import NavItems from '../NavItems'
 import { buttonVariants } from './button'
 import Cart from '../Cart'
-
+import DarkModeToggle from './darkModeToggle'
 
 
 const Navbar = () => {
@@ -82,6 +82,11 @@ const Navbar = () => {
                                     <div className='ml-4 flow-root lg:ml-6'>
                                         {<Cart />}
                                     </div>
+                                    <span
+                                        className='h-6 w-px bg-muted-foreground'
+                                        aria-hidden='true'
+                                    />
+                                    <DarkModeToggle />
                                 </div>
                             </div>
 
