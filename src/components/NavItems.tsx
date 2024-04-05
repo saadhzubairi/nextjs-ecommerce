@@ -34,7 +34,7 @@ const NavItems = () => {
                                             handleOpen={() => { }}
                                             isOpen={true}
                                             isAnyOpen={true}
-                                            key={category.value}
+                                            key={i}
                                         />
                                     </NavigationMenuLink>
                                 </NavigationMenuContent>
