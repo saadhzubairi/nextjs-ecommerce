@@ -67,7 +67,7 @@ export default function Home() {
               key={perk.name}
               className='text-center md:flex md:items-start md:text-left lg:block lg:text-center'>
               <div className='md:flex-shrink-0 flex justify-center'>
-                <div className='h-16 w-16 flex items-center justify-center rounded-full bg-primary text-primary-foreground'>
+                <div className='h-16 w-16 flex items-center justify-center rounded-full bg-primary-foreground text-primary'>
                   {<perk.Icon className='w-1/3 h-1/3' />}
                 </div>
               </div>

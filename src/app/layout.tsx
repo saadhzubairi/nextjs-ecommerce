@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/ui/Navbar";
 import { ThemeProvider } from "@/providers/ThemeProvider"
+import Providers from "@/components/Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,10 +28,13 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <main className="relative flex flex-col min-h-screen">
-            <Navbar />
-            <div className="flex-grow-0 flex-1">
-              {children}
-            </div>
+            {/* now we make trpc and react query accessible to all divs inside */}
+            <Providers>
+              <Navbar />
+              <div className="flex-grow-0 flex-1">
+                {children}
+              </div>
+            </Providers>
           </main>
         </ThemeProvider>
       </body>

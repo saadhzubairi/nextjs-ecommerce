@@ -1,0 +1,12 @@
+the request flow is simple:
+
+request goes to express server
+
+then when we use the trpc express middleware in server.ts, the middleware forwareds the request to a certain api endpoint that lives in next.js land
+
+Express --> Next.js
+
+how do we listen to the reqs in next.js? using the route-handler (nothing more than an api endpoint in next js that listens to reqs coming from express)
+
+the route of course is defined in the app folder:
+api/trpc/[trpc] (dynamic route)
