@@ -6,7 +6,10 @@ import { z } from "zod"
 
 export const formSchema = z.object({
     email: z.string().email({ message: 'Invalid email format' }),
-    password: z.string().min(8).refine((str) => hasUpperCase(str) && hasLowerCase(str) && hasNumber(str) && hasSymbol(str), {
+    password: z.string().min(8, { message: 'Password must be atleast 8 characters long.' }).refine((str) => hasUpperCase(str) && hasLowerCase(str) && hasNumber(str) && hasSymbol(str), {
+        message: 'Password must contain at least one uppercase letter, lowercase letter, number, and symbol'
+    }),
+    passwordAgain: z.string().min(8, { message: 'Password must be atleast 8 characters long.' }).refine((str) => hasUpperCase(str) && hasLowerCase(str) && hasNumber(str) && hasSymbol(str), {
         message: 'Password must contain at least one uppercase letter, lowercase letter, number, and symbol'
     })
 })
